@@ -7,45 +7,40 @@
     <link rel="stylesheet" href="styles/style.css">
     <style>
         .rocket-container {
-            text-align: center;
-            margin: 20px 0;
-        }
-        .rocket-img {
-            width: 200px;
-            height: auto;
-            transition: transform 0.3s;
-        }
-        .rocket-img:hover {
-            transform: scale(1.05);
+            position: relative;
+            width: 100%;
+            margin: 0;
+            padding: 0;
         }
         .rocket-tooltip {
-            visibility: hidden;
-            width: auto;
-            background-color: #555;
-            color: #fff;
-            text-align: center;
-            border-radius: 6px;
-            padding: 5px;
             position: absolute;
-            z-index: 1;
-            bottom: 125%;
-            left: 50%;
-            margin-left: -60px;
+            top: 50%;
+            left: 10%;
+            width: 80%;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #1E90FF; /* Bleu */
+            font-size: 3em;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+            border-radius: 10px;
             opacity: 0;
             transition: opacity 0.3s;
+            pointer-events: none;
         }
         .rocket-container:hover .rocket-tooltip {
-            visibility: visible;
             opacity: 1;
         }
     </style>
 </head>
 <body>
     <div class="rocket-container">
-        <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Décollage de fusée" class="rocket-img">
-        <span class="rocket-tooltip">Funkynnov</span>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" style="width: 100%; height: auto; display: block;">
+            <image href="images/fusee-funkynnov.jpg" x="0" y="0" width="1200" height="600" preserveAspectRatio="xMidYMid slice"/>
+            <text class="rocket-tooltip" x="600" y="300" dominant-baseline="middle" text-anchor="middle">Funkynnov</text>
+        </svg>
     </div>
-    
+
     <header>
         <h1>Denis Cottinet</h1>
         <p>Expert en développement de MVP pour l'instrumentation scientifique</p>
@@ -59,7 +54,7 @@
     <section id="cv">
         <h2>Mon Parcours</h2>
         <p>Ingénieur avec une expérience solide en instrumentation scientifique et en gestion de projets techniques. J'ai travaillé sur des projets variés, allant de la conception de systèmes microfluidiques à la gestion de plateformes de développement.</p>
-        
+
         <h3>Expériences Professionnelles</h3>
         <ul>
             <li>
