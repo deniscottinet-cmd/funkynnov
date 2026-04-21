@@ -1,0 +1,79 @@
+/* styles/style.css */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background: #0077b6;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+section {
+    padding: 1rem;
+    margin: 1rem auto;
+    max-width: 800px;
+}
+
+experience {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+experience h3 {
+    margin-top: 0;
+    color: #0077b6;
+}
+
+experience ul {
+    padding-left: 1.5rem;
+}
+
+experience li {
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Style pour la bannière de fusée */
+.rocket-container {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.rocket-tooltip {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #1E90FF; /* Bleu */
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+}
+
+.rocket-container:hover .rocket-tooltip {
+    opacity: 1;
+}
