@@ -5,8 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Denis Cottinet - Conseil en MVP Instrumentation Scientifique</title>
     <link rel="stylesheet" href="styles/style.css">
+    <style>
+        .rocket-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .rocket-img {
+            width: 200px;
+            height: auto;
+            transition: transform 0.3s;
+        }
+        .rocket-img:hover {
+            transform: scale(1.05);
+        }
+        .rocket-tooltip {
+            visibility: hidden;
+            width: auto;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -60px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .rocket-container:hover .rocket-tooltip {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
 </head>
 <body>
+    <div class="rocket-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/SpaceX_CRS-16_Rocket_Launch_%2846327166291%29.jpg/800px-SpaceX_CRS-16_Rocket_Launch_%2846327166291%29.jpg" alt="Décollage de fusée" class="rocket-img">
+        <span class="rocket-tooltip">Funkynnov</span>
+    </div>
+    
     <header>
         <h1>Denis Cottinet</h1>
         <p>Expert en développement de MVP pour l'instrumentation scientifique</p>
